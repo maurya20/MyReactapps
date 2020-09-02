@@ -4,7 +4,6 @@ export class Header extends Component {
     render() {
         return (
             <header>
-            {/* Fixed navbar */}
             <nav className='navbar navbar-expand-md navbar-dark fixed-top bg-dark'>
               <a className='navbar-brand' href='/'>
                 Fixed navbar
