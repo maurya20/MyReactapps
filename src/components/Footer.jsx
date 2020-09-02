@@ -19,16 +19,10 @@ export class Footer extends Component {
                     <h5 className="title">Links</h5>
                     <ul>
                       <li className="list-unstyled">
-                        <a href="#!">Link 1</a>
+                        <a href="https://maurya20.github.io/rrt/">Sample Trading Info Website</a>
                       </li>
                       <li className="list-unstyled">
-                        <a href="#!">Link 2</a>
-                      </li>
-                      <li className="list-unstyled">
-                        <a href="#!">Link 3</a>
-                      </li>
-                      <li className="list-unstyled">
-                        <a href="#!">Link 4</a>
+                        <a href="https://maurya20.github.io/amb_website/">Sample Company Info Website</a>
                       </li>
                     </ul>
                   </MDBCol>
