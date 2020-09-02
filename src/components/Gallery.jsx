@@ -8,7 +8,7 @@ export class imageGallery extends Component {
         return (
           <div className="gallery">
             <Container>
-            <h2>Your Lucky Gallery!!!</h2>
+            <h2>Your Lucky Gallery!!!  Refresh Page for new Images.</h2>
         <Row>
           <Col xs={6} md={4}>
             <Image src={imgUrl}  thumbnail />
