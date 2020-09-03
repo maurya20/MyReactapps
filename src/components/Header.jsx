@@ -2,6 +2,8 @@ import React, { Component } from 'react'
 import Navbar from 'react-bootstrap/Navbar'
 import {NavDropdown, Nav, } from "react-bootstrap"
 import logo from "./images/logo.png"
+import { Router, Route, Link, browserHistory, IndexRoute } from 'react-router'
+
 
 export class Header extends Component {
     render() {

@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import Image from 'react-bootstrap/Image'
 import {Col, Row, Container} from 'react-bootstrap'
 
+
 export class imageGallery extends Component {
     render() {
         const imgUrl = 'https://picsum.photos/300'
