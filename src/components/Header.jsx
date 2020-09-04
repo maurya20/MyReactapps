@@ -8,7 +8,7 @@ import About from "./About";
 import Gallery from './Gallery'
 import Contact from "./Contact";
 
-export class Header extends Component {
+class Header extends Component {
   render() {
     return (
       <div>
@@ -27,8 +27,7 @@ export class Header extends Component {
               
 
             <Link to={"/"} className="nav-link">
-                  {" "}
-                  Home{" "}
+                  Home
                 </Link>
                 <Link to={"/about"} className="nav-link">
                   About
