@@ -5,12 +5,14 @@ import logo from "./images/logo.png";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import Home from "./Home";
 import About from "./About";
+import Gallery from './Gallery'
 import Contact from "./Contact";
 
 export class Header extends Component {
   render() {
     return (
       <div>
+         <Router>
         <Navbar collapseOnSelect expand="lg" bg="info" variant="dark">
           <Navbar.Brand href="#home">
             <img
@@ -23,6 +25,20 @@ export class Header extends Component {
           <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="mr-auto">
               
+
+            <Link to={"/"} className="nav-link">
+                  {" "}
+                  Home{" "}
+                </Link>
+                <Link to={"/about"} className="nav-link">
+                  About
+                </Link>
+                <Link to={"/gallery"} className="nav-link">
+                  Lucky Gallery
+                </Link>
+                <Link to={"/contact"} className="nav-link">
+                  Contact
+                </Link>
                 <NavDropdown title="Dropdown" id="collasible-nav-dropdown">
                   <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
                   <NavDropdown.Item href="#action/3.2">
@@ -45,21 +61,14 @@ export class Header extends Component {
               </Nav>
             </Navbar.Collapse>
           </Navbar>
-          <Router>
-                <Link to={"/"} className="nav-link">
-                  {" "}
-                  Home{" "}
-                </Link>
-                <Link to={"/about"} className="nav-link">
-                  About
-                </Link>
-                <Link to={"/contact"} className="nav-link">
-                  Contact
-                </Link>
+         
+                
           <Switch>
             <Route exact path="/" component={Home} />
-            <Route path="/contact" component={Contact} />
             <Route path="/about" component={About} />
+            <Route path="/gallery" component={Gallery} />
+            <Route path="/contact" component={Contact} />
+            
           </Switch>
         </Router>
       </div>
