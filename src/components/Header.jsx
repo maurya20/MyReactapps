@@ -2,17 +2,14 @@ import React, { Component } from "react";
 import Navbar from "react-bootstrap/Navbar";
 import { NavDropdown, Nav } from "react-bootstrap";
 import logo from "./images/logo.png";
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
-import Home from "./Home";
-import About from "./About";
-import Gallery from './Gallery'
-import Contact from "./Contact";
+import { Link } from "react-router-dom";
+
 
 class Header extends Component {
   render() {
     return (
       <div>
-         <Router>
+        
         <Navbar collapseOnSelect expand="lg" bg="info" variant="dark">
           <Navbar.Brand href="#home">
             <img
@@ -60,16 +57,6 @@ class Header extends Component {
               </Nav>
             </Navbar.Collapse>
           </Navbar>
-         
-                
-          <Switch>
-            <Route exact path="/" component={Home} />
-            <Route path="/about" component={About} />
-            <Route path="/gallery" component={Gallery} />
-            <Route path="/contact" component={Contact} />
-            
-          </Switch>
-        </Router>
       </div>
     );
   }
