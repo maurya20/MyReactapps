@@ -1,5 +1,6 @@
 import React from 'react';
 import axios from 'axios';
+import './Home.css'
 
 
 class Contact extends React.Component {
@@ -7,9 +8,9 @@ class Contact extends React.Component {
    constructor(props) {
       super(props);
       this.state = {
-        name: '',
-        email: '',
-        message: ''
+        username: '',
+        password: '',
+        
       }
      }
    
@@ -17,7 +18,7 @@ class Contact extends React.Component {
        e.preventDefault();
        axios({
          method: "POST", 
-         url:"http://localhost:3002/send", 
+         url:"http://127.0.0.1:8000/userlogin", 
          data:  this.state
        }).then((response)=>{
          if (response.data.status === 'success'){
@@ -31,42 +32,50 @@ class Contact extends React.Component {
    
      resetForm(){
        
-        this.setState({name: '', email: '', message: ''})
+        this.setState({username: '', password: ''})
      }
      
      render() {
       return(
         <div className="container">
-        <form id="contact-form" onSubmit={this.handleSubmit.bind(this)} method="POST">
-        <div className="form-group">
-            <label htmlFor="name">Name</label>
-            <input type="text" className="form-control" id="name" value={this.state.name} onChange={this.onNameChange.bind(this)} />
-        </div>
-        <div className="form-group">
-            <label htmlFor="exampleInputEmail1">Email address</label>
-            <input type="email" className="form-control" id="email" aria-describedby="emailHelp" value={this.state.email} onChange={this.onEmailChange.bind(this)} />
-        </div>
-        <div className="form-group">
-            <label htmlFor="message">Message</label>
-            <textarea className="form-control" rows="5" id="message" value={this.state.message} onChange={this.onMessageChange.bind(this)} />
-        </div>
-        <button type="submit" className="btn btn-primary">Submit</button>
-        </form>
+          <form className="login-form">
+                <h3>Sign In</h3>
+
+                <div className="form-group">
+                    <label>Email address</label>
+                    <input type="email" className="form-control" placeholder="Enter email" />
+                </div>
+
+                <div className="form-group">
+                    <label>Password</label>
+                    <input type="password" className="form-control" placeholder="Enter password" />
+                </div>
+
+                <div className="form-group">
+                    <div className="custom-control custom-checkbox">
+                        <input type="checkbox" className="custom-control-input" id="customCheck1" />
+                        <label className="custom-control-label" htmlFor="customCheck1">Remember me</label>
+                    </div>
+                </div>
+
+                <button type="submit" className="btn btn-primary btn-block">Submit</button>
+                <p className="forgot-password text-right">
+                    Forgot <a href="#">password?</a>
+                </p>
+            </form>
         </div>
       );
      }
    
      onNameChange(event) {
-      this.setState({name: event.target.value})
+      this.setState({username: event.target.value})
      }
    
      onEmailChange(event) {
-      this.setState({email: event.target.value})
+      this.setState({password: event.target.value})
      }
    
-     onMessageChange(event) {
-      this.setState({message: event.target.value})
-     }
+    
    }
    
  export default Contact;
