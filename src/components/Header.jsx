@@ -32,8 +32,8 @@ class Header extends Component {
                 <Link to={"/gallery"} className="nav-link">
                   Lucky Gallery
                 </Link>
-                <Link to={"/contact"} className="nav-link">
-                  Contact
+                <Link to={"/signup"} className="nav-link">
+                  Sign Up/Sign In
                 </Link>
                 <NavDropdown title="Dropdown" id="collasible-nav-dropdown">
                   <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
