@@ -14,8 +14,6 @@ const Signup = () => {
                 <input
                   type="text"
                   className="form-control"
-                  for="first_name"
-                  name="first_name"
                   placeholder="First Name"
                   required="required"
                 />
@@ -24,8 +22,6 @@ const Signup = () => {
                 <input
                   type="text"
                   className="form-control"
-                  for="last_name"
-                  name="last_name"
                   placeholder="Last Name"
                   required="required"
                 />
@@ -36,8 +32,6 @@ const Signup = () => {
             <input
               type="text"
               className="form-control"
-              for="username"
-              name="username"
               placeholder="Username"
               required="required"
             />
@@ -46,8 +40,6 @@ const Signup = () => {
             <input
               type="email"
               className="form-control"
-              for="email"
-              name="email"
               placeholder="Email"
               required="required"
             />
@@ -56,8 +48,6 @@ const Signup = () => {
             <input
               type="password"
               className="form-control"
-              for="password1"
-              name="password1"
               placeholder="Password"
               required="required"
             />
@@ -66,8 +56,6 @@ const Signup = () => {
             <input
               type="password"
               className="form-control"
-              for="password2"
-              name="password2"
               placeholder="Confirm Password"
               required="required"
             />

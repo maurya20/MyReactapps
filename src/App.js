@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import Footer from './components/Footer'
 import Header from './components/Header'
-import { BrowserRouter as Router, Switch, Route} from "react-router-dom";
+import { MemoryRouter, Route} from "react-router-dom";
 import Home from "./components//Home";
 import About from "./components//About";
 import Gallery from './components//Gallery'
@@ -12,17 +12,17 @@ class App extends Component {
   render() {
     return (
       <div>
-        <Router>
+        <MemoryRouter>
         <Header />
 
-        <Switch>
+       
             <Route exact path="/" component={Home} />
             <Route path="/about" component={About} />
             <Route path="/gallery" component={Gallery} />
             <Route path="/signup" component={Signup} />
             
-          </Switch>
-        </Router>
+          
+        </MemoryRouter>
       
         <Footer />
       </div>
