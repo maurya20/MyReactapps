@@ -12,6 +12,7 @@ export class Footer1 extends Component {
               <h5 className="title">M & M Enterprises</h5>
               <p>Email: mukesh.ice17@gmail.com</p>
               <p>Mob: 9540339805</p>
+              <p>308, Oreo Lane, Tihayatpur, Rajesultanpur, Anjan Shaheed.</p>
             </div>
             <div className="col">
               <h5 className="title">Links</h5>
@@ -34,6 +35,7 @@ export class Footer1 extends Component {
             </div>
           </div>
         </div>
+        <div className="design">Designed by- Mukesh Maurya </div>
       </div>
     );
   }
