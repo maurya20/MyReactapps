@@ -3,6 +3,7 @@ import Navbar from "react-bootstrap/Navbar";
 import { NavDropdown, Nav } from "react-bootstrap";
 import logo from "./images/logo.png";
 import { Link } from "react-router-dom";
+import "./Home.css" 
 
 
 class Header extends Component {
@@ -10,7 +11,7 @@ class Header extends Component {
     return (
       <div>
         
-        <Navbar collapseOnSelect expand="lg" bg="info" variant="dark">
+        <Navbar  className="header" collapseOnSelect expand="lg"  variant="dark">
           <Navbar.Brand href="#home">
             <img
               style={{ width: "150px", height: "30px" }}

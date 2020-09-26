@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import Footer from './components/Footer'
 import Header from './components/Header'
-import { MemoryRouter, Route} from "react-router-dom";
+import { BrowserRouter, Route, NavLink} from "react-router-dom";
 import Home from "./components//Home";
 import About from "./components//About";
 import Gallery from './components//Gallery'
@@ -12,7 +12,7 @@ class App extends Component {
   render() {
     return (
       <div>
-        <MemoryRouter>
+        <BrowserRouter>
         <Header />
 
        
@@ -21,8 +21,10 @@ class App extends Component {
             <Route path="/gallery" component={Gallery} />
             <Route path="/signup" component={Signup} />
             
-          
-        </MemoryRouter>
+          <NavLink to={'/'}>Home1</NavLink>
+           
+          <NavLink to={'/about'}>Home2</NavLink>
+        </BrowserRouter>
       
         <Footer />
       </div>
