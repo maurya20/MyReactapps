@@ -6,6 +6,7 @@ import Home from "./components//Home";
 import About from "./components//About";
 import Gallery from './components//Gallery'
 import Signup from "./components/Signup";
+import Footer1 from './components/Footer1';
 
 
 class App extends Component {
@@ -26,7 +27,8 @@ class App extends Component {
           <NavLink to={'/about'}>Home2</NavLink>
         </BrowserRouter>
       
-        <Footer />
+        <Footer1 />
+        {/* <Footer /> */}
       </div>
     )
   }
