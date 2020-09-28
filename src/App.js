@@ -15,9 +15,7 @@ class App extends Component {
       <div>
         <BrowserRouter>
         <Header />
-        <NavLink to={'/'}>Home1</NavLink>
-           
-           <NavLink to={'/about'}>Home2</NavLink>
+        
        
             <Route exact path="/" component={Home} />
             <Route path="/about" component={About} />

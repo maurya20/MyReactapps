@@ -1,10 +1,14 @@
 import React from "react";
+import {NavLink} from "react-router-dom";
 
 class Home extends React.Component {
   render() {
     console.log(this.props);
     return (
       <div className="container">
+         <NavLink to={'/'}>Home1</NavLink>
+           
+           <NavLink to={'/about'}>Home2</NavLink>
         <h1>Home...</h1>
         <p>
           Home is a 2015 American computer-animated science-fiction comedy
@@ -32,6 +36,7 @@ class Home extends React.Component {
           of the film. It uses hand-drawn animation and none of the original
           cast (except Jones) reprised their roles.
         </p>
+        
       </div>
     );
   }
