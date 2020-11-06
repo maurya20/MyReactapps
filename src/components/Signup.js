@@ -1,89 +1,46 @@
-import React from "react";
-import "./Signup.css";
-import { Link } from "react-router-dom";
+import React, { Component } from 'react'
 
-const Signup = () => {
-  return (
 
-    <div className="signup-form">
-      <form>
-        <h2>Sign Up</h2>
-          <div className="form-group">
-            <div className="row">
-              <div className="col">
-                <input
-                  type="text"
-                  className="form-control"
-                  placeholder="First Name"
-                  required="required"
-                />
-              </div>
-              <div className="col">
-                <input
-                  type="text"
-                  className="form-control"
-                  placeholder="Last Name"
-                  required="required"
-                />
-              </div>
-            </div>
-          </div>
-          <div className="form-group">
-            <input
-              type="text"
-              className="form-control"
-              placeholder="Username"
-              required="required"
-            />
-          </div>
-          <div className="form-group">
-            <input
-              type="email"
-              className="form-control"
-              placeholder="Email"
-              required="required"
-            />
-          </div>
-          <div className="form-group">
-            <input
-              type="password"
-              className="form-control"
-              placeholder="Password"
-              required="required"
-            />
-          </div>
-          <div className="form-group">
-            <input
-              type="password"
-              className="form-control"
-              placeholder="Confirm Password"
-              required="required"
-            />
-          </div>
-          <div className="form-group">
-            <label className="form-check-label">
-              <input type="checkbox" required="required" /> I accept the{" "}
-              <Link to={"/home"}>Terms of Use</Link> &amp; <Link to={"/home"}>Privacy Policy</Link>
-              <button
-                type="submit"
-                className="btn btn-success"
-                style={{float:"right"}}
-              >
-                Sign Up
-              </button>
-            </label>
-          </div>
-          <div className="form-group"></div>
-        </form>
-        <h5>
-          Have an account?{" "}
-          <Link to={"/home"}>
-            <h4 className="btn btn-primary">Login here</h4>
-          </Link>
-        </h5>
+const Signup = ()=>{
+    return (
+      <div>
+      <div className="row">
+    <div className="col bg-white"></div>
+    <div className="col-6 bg-secondary">
+      <h3>Register Here</h3>
+    <form >
+    <div className="form-group">
+      <label >Username:</label>
+      <input type="text" className="form-control" placeholder="Enter Username" />
+    </div>
+    <div className="form-group">
+      <label >Email:</label>
+      <input type="email" className="form-control"  placeholder="Enter email" />
+    </div>
+    <div className="form-group">
+      <label >Password:</label>
+      <input type="password" className="form-control"  placeholder="Enter password" />
+    </div>
+    <div className="form-group">
+      <label >Confirm Password:</label>
+      <input type="password" className="form-control"  placeholder="Confirm password"/>
+    </div>
+    <div className="form-group form-check">
+      <label className="form-check-label">
+        <input className="form-check-input" type="checkbox"/> Remember me
+      </label>
+    </div>
+    <button type="submit" className="btn btn-primary float-right">Submit</button>
+  </form>
+  <br/>
+  <br/>
+    </div>
+    <div className="col bg-white"></div>
+  </div>
+ 
       </div>
-    
-  );
-};
+    )
+  }
+
 
 export default Signup
