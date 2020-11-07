@@ -18,20 +18,7 @@ color: rgb(187, 255, 0);
 /* for  Blog Detail page */
 
 
- .category-nav{
-   background-color: rgb(78, 15, 87); 
-   list-style-type: none;
-   text-align: center;
-   margin: 0;
-   padding: 0;
-   
- }
- .category-nav li {
-   display: inline-block;
-   font-size: 20px;
-   padding: 20px;
-   
- }
+
 
 /* For footer */
 .footer1{
@@ -50,39 +37,3 @@ color: rgb(187, 255, 0);
    text-align: center;
 }
 
-
-/* For popup */
-
-.modal {
-   font-size: 12px;
- }
- .modal > .header {
-   width: 100%;
-   border-bottom: 1px solid gray;
-   font-size: 18px;
-   text-align: center;
-   padding: 5px;
- }
- .modal > .content {
-   width: 100%;
-   padding: 10px 5px;
- }
- .modal > .actions {
-   width: 100%;
-   padding: 10px 5px;
-   margin: auto;
-   text-align: center;
- }
- .modal > .close {
-   cursor: pointer;
-   position: absolute;
-   display: block;
-   padding: 2px 5px;
-   line-height: 20px;
-   right: -10px;
-   top: -10px;
-   font-size: 24px;
-   background: #ffffff;
-   border-radius: 18px;
-   border: 1px solid #cfcece;
- }
